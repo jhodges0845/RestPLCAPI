@@ -12,7 +12,7 @@ def read_plc(ipaddress: str, tag_name: str):
         is_open = False
         return False
 
-    return = json.load(c.read_tag(tag_name))
+    return c.read_tag(tag_name)
 
 
 def write_plc(ipaddress: str, tag_name: str, data_type: str, tag_value):
